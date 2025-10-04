@@ -1,4 +1,4 @@
-m = 1000000007
+MOD = 1000000007
 
 def matmul(a, b):
     n, k, p = len(a), len(b), len(b[0])
@@ -7,9 +7,7 @@ def matmul(a, b):
         for j in range(p):
             s = 0
             for x in range(k):
-                s += a[i][x] * b[x][j]
-            if m:
-                s %= m
+                s = (s + a[i][x] * b[x][j]) % MOD
             product[i][j] = s
     return product
 
