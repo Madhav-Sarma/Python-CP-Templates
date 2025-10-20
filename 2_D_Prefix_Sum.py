@@ -1,4 +1,5 @@
-# cook your dish here
+# https://codeforces.com/edu/course/3/lesson/10/3 #
+
 n,m=map(int,input().split())
 a=[[0]*(m+1) for _ in range(n+1)]
 for i in range(1,n+1):
